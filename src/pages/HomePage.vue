@@ -11,15 +11,16 @@
     <div id="content">
       <p class="pt-3 px-3 mx-auto" v-html="randomWord"></p>
       <div>
-        <a href="/" class="btn mt-3 px-5 py-2 btn-outline-info">KONTAKT</a>
+        <a href="/" class="btn mt-5 mb-4 px-5 py-2 btn-outline-info">KONTAKT</a>
       </div>
-      <div style="padding-top:20rem"></div>
+      <!-- <div style="padding-top:20rem"></div> -->
       <h3>Skilled:</h3>
       <div>
-        <img src="../assets/icons/html5.png" alt="HTML5">
+        <!-- <img src="../assets/icons/html5.png" alt="HTML5">
         <img src="../assets/icons/css3.png" alt="CCS3">
         <img src="../assets/icons/js.png" alt="JavaScript">
-        <img src="../assets/icons/wp.png" alt="WordPress">
+        <img src="../assets/icons/wp.png" alt="WordPress"> -->
+        <p>HTML, CSS, JS, WP</p>
       </div>
       <h3>Currently learning:</h3>
       <div>
