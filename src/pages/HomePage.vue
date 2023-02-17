@@ -33,7 +33,7 @@
       <p class="mini pt-5">build: v0 (02.02.2023)</p>
     </div>
   </section>
-  <div id="arrowDown">
+  <div id="arrowDown" class="d-lg-none">
     <img src="../assets/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
 </div>
 </template>
