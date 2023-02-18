@@ -10,17 +10,16 @@
     </div>
     <div id="content">
       <p class="pt-3 px-3 mx-auto" v-html="randomWord"></p>
-      <div>
-        <a href="/" class="btn mt-5 mb-4 px-5 py-2 btn-outline-info">KONTAKT</a>
+      <div class="py-5">
+        <a href="/" class="button">KONTAKT</a>
       </div>
-      <!-- <div style="padding-top:20rem"></div> -->
-      <h3>Skilled:</h3>
-      <div>
-        <!-- <img src="../assets/icons/html5.png" alt="HTML5">
-        <img src="../assets/icons/css3.png" alt="CCS3">
-        <img src="../assets/icons/js.png" alt="JavaScript">
-        <img src="../assets/icons/wp.png" alt="WordPress"> -->
-        <p>HTML, CSS, JS, WP</p>
+      <div v-if="showAnimation" id="arrowDown" class="d-lg-none mx-auto">
+        <img v-if="downAnimation" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
+        <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
+      </div>
+      <h3 class="skipScreen">Skilled:</h3>
+      <div id="skills" class="pt-3">
+        <img v-for="item in skills" :key="item" :src="getImgUrl(item)" alt="{{ item }}" class="w-100">
       </div>
       <h3>Currently learning:</h3>
       <div>
@@ -33,9 +32,6 @@
       <p class="mini pt-5">build: v0 (02.02.2023)</p>
     </div>
   </section>
-  <div id="arrowDown" class="d-lg-none">
-    <img src="../assets/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
-</div>
 </template>
 
 <script>
@@ -44,6 +40,8 @@ export default {
   data() {
     return {
       quoteElem: String,
+      downAnimation: Boolean,
+      showAnimation: Boolean,
       randomNumber: Number,
       randomWord: 'Das Leben hat zu viele Variablen.',
       wordsList: [
@@ -53,18 +51,46 @@ export default {
         '"Kunst. Kultur. Schönheit."',
         '<i>Sucht den Cursor seiner Maus...</i>',
         '"Jackpot!!"',
-        // '"Ich hab doch gesagt, dass ich paar Minuten später komm/ Wieso klingelt jetzt jede Dekade mein Telefon"<br>- Maeckes'
+        'Einfach mal alles komplett anders machen.'
       ],
+      skills: ["html5", "css3", "js", "bs", "wp"],
       captionToggled: false,
     }
   },
   mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    this.showAnimation = true;
+    console.log("showAnimation: " + this.showAnimation);
     this.picker();
     window.setInterval(() => {
       this.picker();
     }, 9800);
+    if (Math.random() < 0.5) this.downAnimation = true;
+    else this.downAnimation = false;
+    // window.addEventListener("scroll", function () {
+    // if (window.scrollY == 0) {
+    // this.showAnimation = false;
+    // console.log("showAnimation changed: " + this.showAnimation);
+    // } else {
+    // this.showAnimation = true;
+    // console.log("showAnimation changed: " + this.showAnimation);
+    // }
+    // });
   },
+  // created () {
+  //   window.addEventListener('scroll', this.handleScroll);
+  // },
+  // unmounted () {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // },
   methods: {
+    getImgUrl(pet) {
+      var images = require.context('../assets/icons/skills/', false, /\.png$/)
+      return images('./' + pet + ".png")
+    },
+    // handleScroll (event) {
+    // console.log("scroll" + event)
+    // },
     picker: function () {
       this.randomNumber = Math.floor(Math.random() * this.wordsList.length);
       this.randomWord = this.wordsList[this.randomNumber]
@@ -73,10 +99,8 @@ export default {
       let portraitCaption = document.getElementById('portraitCaption');
       if (this.captionToggled) {
         portraitCaption.style.height = "0";
-        // portraitCaption.style.lineHeight = "0";
       } else {
         portraitCaption.style.height = "48px";
-        // portraitCaption.style.lineHeight = "2";
       }
       this.captionToggled = !this.captionToggled
     }
@@ -150,11 +174,24 @@ h3 {
 }
 
 #arrowDown {
-  position: absolute;
+  /* position: absolute; */
   /* background-color: red; */
   height: 80px;
   width: 50px;
-  left: 1.5rem;
+  /* left: 1.5rem; */
+  left: 50vw;
+  /* transform: translateX(-50%); */
   bottom: calc(var(--navbarBottomHeight) + 3rem);
+}
+
+#skills img {
+  max-width: clamp(65px, 10%, 120px);
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+.skipScreen {
+  padding-top: calc(calc(100vh / 2) - calc(1.25 * var(--navbarBottomHeight)));
+  /* padding-top: clamp(calc(667px - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight))); */
 }
 </style>

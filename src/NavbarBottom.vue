@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     getImgUrl(pet) {
-      var images = require.context('./assets/icons/', false, /\.png$/)
+      var images = require.context('./assets/icons/menu/', false, /\.png$/)
       return images('./' + pet + ".png")
     }
   },

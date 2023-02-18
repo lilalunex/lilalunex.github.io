@@ -1,7 +1,5 @@
 <template>
-  <!--  <h1>{{randomWord}}</h1>-->
   <component :is="currentView" />
-  <!-- <NavbarBottom /> -->
 </template>
 
 <script>
@@ -40,12 +38,24 @@ export default {
     currentView() {
       return routes[this.currentPath.slice(1) || '/'] || NotFoundPage
     }
-  },  
+  },
   mounted() {
     window.addEventListener('hashchange', () => {
       this.currentPath = window.location.hash
     })
+    // window.addEventListener('scroll', this.handleScroll);
   },
+  // created() {
+  //   window.addEventListener('scroll', this.handleScroll);
+  // },
+  // unmounted() {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // },
+  methods: {
+    // handleScroll(event) {
+    //   console.log("scroll" + event)
+    // },
+  }
 }
 </script>
 
@@ -54,6 +64,7 @@ export default {
   /* purple #100010 */
   /* teal #055C4F */
   /* gold #5C5B09 */
+  --teal: #00A1D7;
   --mainColor: white;
   --goldColor: #5C5B09;
   --navbarBottomHeight: 260px
@@ -103,5 +114,20 @@ a {
 
 p {
   color: var(--mainColor) !important;
+}
+
+.button {
+  background-color: var(--teal);
+  border-color: var(--teal);
+  border-radius: .5rem;
+  border: 2px solid var(--teal);
+  transition: .3s;
+  padding: .75rem 2rem;
+}
+
+.button:hover {
+  background-color: #210021;
+  border-color: var(--teal);
+  color: var(--teal) !important;
 }
 </style>
