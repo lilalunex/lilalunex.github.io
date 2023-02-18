@@ -13,7 +13,8 @@
       <div class="py-5">
         <a href="/" class="button">KONTAKT</a>
       </div>
-      <div v-if="showAnimation" id="arrowDown" class="d-lg-none mx-auto">
+      <!-- <div v-if="showAnimation" id="arrowDown" class="d-lg-none mx-auto"> -->
+      <div v-if="showAnimation" id="arrowDown" class="mx-auto">
         <img v-if="downAnimation" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
@@ -192,6 +193,7 @@ h3 {
 
 .skipScreen {
   padding-top: calc(calc(100vh / 2) - calc(1.25 * var(--navbarBottomHeight)));
+  padding-top: clamp(calc(calc(100vh / 2) - calc(1.25 * var(--navbarBottomHeight))), 100vh, calc(calc(100vh / 2) - calc(.75 * var(--navbarBottomHeight))));
   /* padding-top: clamp(calc(667px - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight))); */
 }
 </style>
