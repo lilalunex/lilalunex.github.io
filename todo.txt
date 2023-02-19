@@ -1,0 +1,20 @@
+- tailwind icon
+- woocommerce icon
+
+- html validator
+- css validator
+- vue code verbessern
+
+- partner seite
+
+- tools seite
+- auswaelmenu mit back button
+	- kleingeldzaehler
+	- todo liste
+- storage
+
+- shop bauen
+
+- Impressum
+- datenschutz
+- cookies

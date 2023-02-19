@@ -43,49 +43,40 @@ export default {
     window.addEventListener('hashchange', () => {
       this.currentPath = window.location.hash
     })
-    // window.addEventListener('scroll', this.handleScroll);
   },
-  // created() {
-  //   window.addEventListener('scroll', this.handleScroll);
-  // },
-  // unmounted() {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // },
-  methods: {
-    // handleScroll(event) {
-    //   console.log("scroll" + event)
-    // },
-  }
 }
 </script>
 
 <style>
 :root {
-  /* purple #100010 */
-  /* teal #055C4F */
-  /* gold #5C5B09 */
   --teal: #00A1D7;
   --mainColor: white;
   --goldColor: #5C5B09;
   --navbarBottomHeight: 260px
-    /* iOx Safari (where URL thing is at bottom) */
-    /* iOS Chrome (needs more space than safari) */
 }
 
 #app {
   max-height: clamp(calc(667px - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight)));
-  /* height: 407px; */
-  overflow-y: auto;
-  /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
+  /* overflow-y: auto; */
   text-align: center;
-  /*color: #2c3e50;*/
   overflow-x: hidden;
+}
+
+#app::-webkit-scrollbar {
+  display: none;
+}
+
+#app {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 html {
   background-color: black;
+}
+
+#navbarBottomHook {
+  overflow: hidden;
 }
 
 body {
@@ -117,6 +108,7 @@ p {
 }
 
 .button {
+  text-transform: uppercase;
   background-color: var(--teal);
   border-color: var(--teal);
   border-radius: .5rem;
@@ -125,7 +117,7 @@ p {
   padding: .75rem 2rem;
 }
 
-.button:hover {
+.button:hover, .button:active {
   background-color: #210021;
   border-color: var(--teal);
   color: var(--teal) !important;

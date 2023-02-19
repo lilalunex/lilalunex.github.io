@@ -1,9 +1,9 @@
 <template>
   <!-- <div id="titleOfPage" class="pt-4 pb-1 pb-sm-3" v-bind:class="[animationClass]"> -->
-  <div id="titleOfPage" class="pt-4 pb-1 pb-sm-3">
+  <section id="titleOfPage" class="pt-4 pb-1 pb-sm-3">
     <h2 class="bottom-0 pb-3 position-sticky">{{ msg }}</h2>
     <!-- <hr v-bind:class="[hrClass]"> -->
-  </div>
+  </section>
 </template>
 
 <script>

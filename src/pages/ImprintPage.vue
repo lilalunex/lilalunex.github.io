@@ -1,6 +1,6 @@
 <template>
-  <section  class="animationLeft">
-  <HeaderTwo msg="Impressum"/>
+  <section class="animationLeft">
+    <HeaderTwo msg="Impressum" />
   </section>
 </template>
 
@@ -12,6 +12,4 @@ export default {
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

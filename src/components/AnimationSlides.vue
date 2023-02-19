@@ -53,27 +53,27 @@
   }
 }
 
-:not(#homepage).animationLeft>div:nth-of-type(1) {
+:not(#homepage).animationLeft>section:nth-of-type(1) {
   animation: slideFromLeft .3s;
 }
 
-.animationLeft>div:nth-of-type(2) {
+.animationLeft>section:nth-of-type(2) {
   animation: slideFromRight .6s;
 }
 
-.animationLeft>div:nth-of-type(3) {
+.animationLeft>section:nth-of-type(3) {
   animation: slideFromLeft .9s;
 }
 
-.animationRight>div:nth-of-type(1) {
+.animationRight>section:nth-of-type(1) {
   animation: slideFromRight .3s;
 }
 
-.animationRight>div:nth-of-type(2) {
+.animationRight>section:nth-of-type(2) {
   animation: slideFromLeft 6s;
 }
 
-.animationRight>div:nth-of-type(3) {
+.animationRight>section:nth-of-type(3) {
   animation: slideFromRight 9s;
 }
 

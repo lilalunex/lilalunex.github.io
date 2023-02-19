@@ -58,9 +58,6 @@ export default {
 </script>
 
 <style scoped>
-#navbarBottomHook {
-  overflow: hidden;
-}
 
 #navbarBottom {
   width: 100%;
