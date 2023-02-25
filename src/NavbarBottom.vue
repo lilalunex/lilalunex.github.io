@@ -59,6 +59,10 @@ export default {
 
 <style scoped>
 
+#navbarBottomHook, #app {
+  overflow: hidden;
+}
+
 #navbarBottom {
   width: 100%;
   /* max-width: 600px; */

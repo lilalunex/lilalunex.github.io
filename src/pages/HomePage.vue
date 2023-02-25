@@ -4,18 +4,20 @@
     <section id="portraitHolder" class="position-relative">
       <img v-if="randomPortrait === 1" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait1.jpg"
         alt="Lunex" class="w-100 rounded-5 pb-sm-2">
-      <img v-else @click="toggleCaption" id="portrait" src="../assets/portraits/portrait2.jpg" alt="Lunex"
-        class="w-100 rounded-5 pb-sm-2">
+      <img v-else-if="randomPortrait === 2" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait2.jpg"
+        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+      <img v-else-if="randomPortrait === 3" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait3.jpg"
+        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <div class="imgSpacer"></div>
       <div id="portraitCaption" class="pt-2">
         <p>📸&nbsp;&nbsp;Sergej Dukkardt</p>
       </div>
-      <div class="quote pt-2">
+      <div class="quote pt-2 pt-md-3">
         <p class="px-3 mx-auto" v-html="randomWord"></p>
       </div>
     </section>
     <section id="content" class="pt-3">
-      <div class="mt-3 mb-5 my-md-5 contact">
+      <div class="mt-3 mb-4 my-md-5 contact">
         <a href="/" class="button">Kontakt</a>
       </div>
       <div id="arrowDown" class="mx-auto">
@@ -24,15 +26,19 @@
       </div>
       <h3>Skilled:</h3>
       <div class="pt-3 skills">
-        <img v-for="item in skills" :key="item" :src="getImgUrl(item)" alt="{{ item }}">
+        <img v-for="item in skills" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
       </div>
       <h3>Currently learning:</h3>
       <div class="skills">
-        <img v-for="item in learning" :key="item" :src="getImgUrl(item)" alt="{{ item }}">
+        <img v-for="item in learning" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
       </div>
       <h3>Next up:</h3>
       <div>
         <p>React, Nuxt, Next, animations</p>
+      </div>
+      <h3>Socials:</h3>
+      <div class="skills">
+        <a v-for="item in socials" :key="item" :href="item.link" class="px-3" target="_blank">{{ item.name }}</a>
       </div>
       <p class="mini pt-5">build: sag ich nicht</p>
     </section>
@@ -44,9 +50,11 @@ export default {
   name: 'HomePage',
   data() {
     return {
+      helpCounter: Number,
       quoteElem: String,
       downAnimation: Number,
       randomNumber: Number,
+      randomPortraitTemp: Number,
       randomPortrait: Number,
       randomTitle: Number,
       portraitSrc: "",
@@ -59,30 +67,56 @@ export default {
         '<i>Sucht den Cursor seiner Maus...</i>',
         '"Jackpot!!"',
         '<i>Einfach mal alles komplett anders machen.</i>',
-        'Website Crack.'
+        'Website Crack.',
+        'Heute schon genug Wasser getrunken?'
       ],
       skills: ["html5", "css3", "js", "bs", "tw", "wp", "woo"],
       learning: ["vue"],
+      socials: [
+        { name: "xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
+        { name: "linkedin", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
+        { name: "instagram", link: "https://instagram.com/lilalunex" },
+        { name: "github", link: "https://github.com/lilalunex" }
+      ],
       captionToggled: false,
     }
   },
   mounted() {
+    this.helpCounter = 0;
     this.randomNumber = Math.floor(Math.random() * this.wordsList.length);
     this.randomWord = this.wordsList[this.randomNumber]
     window.setInterval(() => {
       this.picker();
     }, 6000);
     this.downAnimation = Math.random() < 0.5 ? 1 : 2;
-    this.randomPortrait = Math.random() < 0.5 ? 1 : 2;
+    // this.randomPortrait = Math.random() < 0.5 ? 1 : 2;
+    this.randomPortraitTemp = Math.random();
+    // console.log("randomPortraitTemp: "+this.randomPortraitTemp)
+    if (this.randomPortraitTemp < 0.33) this.randomPortrait = 1
+    else if (this.randomPortraitTemp < 0.66) this.randomPortrait = 2
+    else this.randomPortrait = 3
   },
   methods: {
-    getImgUrl(pet) {
+    getImgSkills(pet) {
       var images = require.context('../assets/icons/skills/', false, /\.png$/)
       return images('./' + pet + ".png")
     },
+    getImgPortrait(pet) {
+      var images = require.context('../assets/portraits/', false, /\.png$/)
+      return images('./' + pet + ".jpg")
+    },
     picker: function () {
-      this.randomNumber = Math.floor(Math.random() * this.wordsList.length);
+      this.helpCounter = 0;
+      while (this.wordsList[this.randomNumber] == this.randomWord) {
+        // console.log("run changing quote: " + this.helpCounter)
+        this.randomNumber = Math.floor(Math.random() * this.wordsList.length);
+        // if (this.wordsList[this.randomNumber] != this.randomWord) break;
+        // console.log("this.randomWord: "+this.randomWord)
+        // console.log("this.wordsList[this.randomNumber]: "+this.wordsList[this.randomNumber])
+        // this.helpCounter++;
+      }
       this.randomWord = this.wordsList[this.randomNumber]
+      // console.log(this.randomWord)
     },
     toggleCaption: function () {
       let portraitCaption = document.getElementById('portraitCaption');
@@ -151,11 +185,7 @@ h3 {
   /* line-height: 2; */
   height: 0;
   overflow: hidden;
-  transition: .3s ease-in-out;
-}
-
-#portraitCaption p {
-  transition: .3s ease-in-out;
+  transition: .6s ease-in-out;
 }
 
 #arrowDown {

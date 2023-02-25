@@ -67,15 +67,18 @@ export default {
 }
 
 #app {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 html {
   background-color: black;
 }
 
-#navbarBottomHook {
+#navbarBottomHook,
+#navbarBottom {
   overflow: hidden;
 }
 
@@ -117,7 +120,8 @@ p {
   padding: .75rem 2rem;
 }
 
-.button:hover, .button:active {
+.button:hover,
+.button:active {
   background-color: #210021;
   border-color: var(--teal);
   color: var(--teal) !important;

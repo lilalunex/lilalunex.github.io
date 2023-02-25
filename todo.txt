@@ -1,5 +1,6 @@
 - tailwind icon
 - woocommerce icon
+- vue icon
 
 - html validator
 - css validator
