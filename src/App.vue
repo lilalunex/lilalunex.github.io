@@ -129,4 +129,13 @@ p {
   border-color: var(--teal);
   color: var(--teal) !important;
 }
+
+.button-outline {
+  border-color: var(--teal);
+  border-radius: .5rem;
+  border: 2px solid var(--teal);
+  transition: .3s;
+  padding: .75rem 2rem;
+  
+}
 </style>

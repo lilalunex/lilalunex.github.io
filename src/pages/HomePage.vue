@@ -25,36 +25,20 @@
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
-      <div class="py-4">
-        <h4>Skilled</h4>
-        <div class="pt-3 skills">
-          <img v-for="item in skills" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
-        </div>
-      </div>
-      <div class="py-4">
-        <h4>Currently learning</h4>
-        <div class="pt-3 skills">
-          <img v-for="item in learning" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
-        </div>
-      </div>
-      <div class="py-4">
-        <h4>Next up</h4>
-        <div class="pt-3 skills">
-          <img v-for="item in next" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
-        </div>
-      </div>
-      <div class="py-4">
-        <h4>Socials:</h4>
-        <div>
-          <a v-for="item in socials" :key="item" :href="item.link" class="px-3" target="_blank">{{ item.name }}</a>
-        </div>
-      </div>
+
+      <SkillsElem title="Skilled" :arrImages=this.skills />
+      <SkillsElem title="Currently learning" :arrImages=this.learning />
+      <SkillsElem title="Next up" :arrImages=this.next />
+      <SkillsElem title="Mehr von mir" :arrLinks=this.socials />
+
       <p class="mini pt-5">build: 27.02.2023 12:30</p>
     </section>
   </main>
 </template>
 
 <script>
+import SkillsElem from '@/components/SkillsElem.vue';
+
 export default {
   name: 'HomePage',
   data() {
@@ -83,13 +67,16 @@ export default {
       learning: ["vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-        { name: "xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
-        { name: "linkedin", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
+        { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
+        { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
         // { name: "instagram", link: "https://instagram.com/lilalunex" },
-        { name: "github", link: "https://github.com/lilalunex" }
+        { name: "Github", link: "https://github.com/lilalunex" }
       ],
       captionToggled: false,
     }
+  },
+  components: {
+    SkillsElem
   },
   mounted() {
     this.helpCounter = 0;
@@ -107,10 +94,10 @@ export default {
     else this.randomPortrait = 3
   },
   methods: {
-    getImgSkills(pet) {
-      var images = require.context('../assets/icons/skills/', false, /\.png$/)
-      return images('./' + pet + ".png")
-    },
+    // getImgSkills(pet) {
+    //   var images = require.context('../assets/icons/skills/', false, /\.png$/)
+    //   return images('./' + pet + ".png")
+    // },
     getImgPortrait(pet) {
       var images = require.context('../assets/portraits/', false, /\.png$/)
       return images('./' + pet + ".jpg")
@@ -210,14 +197,6 @@ h3 {
   /* left: 50vw; */
   /* transform: translateX(-50%); */
   /* bottom: calc(var(--navbarBottomHeight) + 1.5rem); */
-}
-
-.skills img {
-  max-width: clamp(65px, 10%, 120px);
-  padding-left: .25rem;
-  padding-right: .25rem;
-  width: 100%;
-  padding-bottom: .5rem;
 }
 
 .skipScreen {
