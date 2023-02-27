@@ -96,7 +96,10 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   color: var(--mainColor) !important;
   text-shadow: 2px 2px 0px black;
 }

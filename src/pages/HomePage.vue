@@ -13,7 +13,7 @@
         <p>📸&nbsp;&nbsp;Sergej Dukkardt</p>
       </div>
       <div class="quote pt-3">
-      <!-- <div class=""> -->
+        <!-- <div class=""> -->
         <p class="px-3 mx-auto" v-html="randomWord"></p>
       </div>
     </section>
@@ -25,21 +25,29 @@
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
-      <h3>Skilled:</h3>
-      <div class="pt-3 skills">
-        <img v-for="item in skills" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
+      <div class="py-4">
+        <h4>Skilled</h4>
+        <div class="pt-3 skills">
+          <img v-for="item in skills" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
+        </div>
       </div>
-      <h3>Currently learning:</h3>
-      <div class="skills">
-        <img v-for="item in learning" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
+      <div class="py-4">
+        <h4>Currently learning</h4>
+        <div class="pt-3 skills">
+          <img v-for="item in learning" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
+        </div>
       </div>
-      <h3>Next up:</h3>
-      <div>
-        <p>React, Nuxt, Next, animations</p>
+      <div class="py-4">
+        <h4>Next up</h4>
+        <div class="pt-3 skills">
+          <p>React, Nuxt, Next, animations</p>
+        </div>
       </div>
-      <h3>Socials:</h3>
-      <div class="skills">
-        <a v-for="item in socials" :key="item" :href="item.link" class="px-3" target="_blank">{{ item.name }}</a>
+      <div class="py-4">
+        <h4>Socials:</h4>
+        <div class="skills">
+          <a v-for="item in socials" :key="item" :href="item.link" class="px-3" target="_blank">{{ item.name }}</a>
+        </div>
       </div>
       <p class="mini pt-5">build: sag ich nicht</p>
     </section>
@@ -71,7 +79,7 @@ export default {
         'Website Crack.',
         'Heute schon genug Wasser getrunken?'
       ],
-      skills: ["html5", "css3", "js", "bs", "tw", "wp", "woo"],
+      skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
       learning: ["vue"],
       socials: [
         { name: "xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
