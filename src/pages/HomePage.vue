@@ -8,11 +8,12 @@
         alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <img v-else-if="randomPortrait === 3" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait3.jpg"
         alt="Lunex" class="w-100 rounded-5 pb-sm-2">
-      <div class="imgSpacer"></div>
+      <!-- <div class="imgSpacer"></div> -->
       <div id="portraitCaption" class="pt-2">
         <p>📸&nbsp;&nbsp;Sergej Dukkardt</p>
       </div>
-      <div class="quote pt-2 pt-md-3">
+      <div class="quote pt-3">
+      <!-- <div class=""> -->
         <p class="px-3 mx-auto" v-html="randomWord"></p>
       </div>
     </section>
@@ -132,17 +133,20 @@ export default {
 </script>
 
 <style scoped>
+#portraitHolder {
+  /* position: absolute; */
+  /* transform: translateX(-50%); */
+}
+
 #portraitHolder img {
-  position: absolute;
-  transform: translateX(-50%);
-  max-width: clamp(160px, 40%, 200px);
+  max-width: clamp(160px, 30%, 200px);
   transition: .6s ease-in-out;
   animation: portraitImg 6s infinite;
   cursor: pointer;
 }
 
 .imgSpacer {
-  min-height: clamp(160px, 20vw, 210px);
+  min-height: clamp(160px, 35vw, 200px);
 }
 
 @keyframes portraitImg {
