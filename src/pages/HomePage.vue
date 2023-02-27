@@ -40,16 +40,16 @@
       <div class="py-4">
         <h4>Next up</h4>
         <div class="pt-3 skills">
-          <p>React, Nuxt, Next, animations</p>
+          <img v-for="item in next" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
         </div>
       </div>
       <div class="py-4">
         <h4>Socials:</h4>
-        <div class="skills">
+        <div>
           <a v-for="item in socials" :key="item" :href="item.link" class="px-3" target="_blank">{{ item.name }}</a>
         </div>
       </div>
-      <p class="mini pt-5">build: sag ich nicht</p>
+      <p class="mini pt-5">build: 27.02.2023 12:30</p>
     </section>
   </main>
 </template>
@@ -81,10 +81,11 @@ export default {
       ],
       skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
       learning: ["vue"],
+      next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
         { name: "xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
         { name: "linkedin", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
-        { name: "instagram", link: "https://instagram.com/lilalunex" },
+        // { name: "instagram", link: "https://instagram.com/lilalunex" },
         { name: "github", link: "https://github.com/lilalunex" }
       ],
       captionToggled: false,
