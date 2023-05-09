@@ -31,7 +31,7 @@
       <SkillsElem title="Next up" :arrImages=this.next />
       <SkillsElem title="Mehr von mir" :arrLinks=this.socials />
 
-      <p class="mini pt-5">build: 27.02.2023 12:30</p>
+      <!-- <p class="mini pt-5">build: 27.02.2023 12:30</p> -->
     </section>
   </main>
 </template>
