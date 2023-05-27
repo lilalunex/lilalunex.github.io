@@ -19,7 +19,7 @@
     </section>
     <section id="content" class="pt-3">
       <div class="mt-3 mb-4 my-md-5 contact">
-        <a href="/" class="button">Kontakt</a>
+        <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;" class="button">Kontakt</a>
       </div>
       <div id="arrowDown" class="mx-auto">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
