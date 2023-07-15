@@ -32,7 +32,7 @@
       <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
       <SkillsElem title="Mehr von mir" :arrLinks=this.socials />
 
-      <p class="mini pt-5">build: 15.07.2023 04:09</p>
+      <p class="mini pt-5">build: 15.07.2023 04:15</p>
     </section>
   </main>
 </template>
