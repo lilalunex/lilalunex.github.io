@@ -1,6 +1,6 @@
 <template>
 	<div class="py-4 skills">
-		<h4 class="text-start leftspacer">{{ title }}</h4>
+		<!-- <h4 class="text-center">{{ title }}</h4> -->
 		<!-- <p v-for="item in arr" :key="item" alt="">{{ item }}</p> -->
 		<img v-for="item in arrImages" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
 		<div v-if="arrLinks" class="pt-4">

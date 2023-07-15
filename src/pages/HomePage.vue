@@ -19,19 +19,20 @@
     </section>
     <section id="content" class="pt-3">
       <div class="mt-3 mb-4 my-md-5 contact">
-        <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;" class="button">Kontakt</a>
+        <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;"
+          class="button">Kontakt</a>
       </div>
       <div id="arrowDown" class="mx-auto">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
 
-      <SkillsElem title="Skilled" :arrImages=this.skills />
-      <SkillsElem title="Currently learning" :arrImages=this.learning />
-      <SkillsElem title="Next up" :arrImages=this.next />
+      <!-- <SkillsElem title="Skilled" :arrImages=this.skills /> -->
+      <!-- <SkillsElem title="Currently learning" :arrImages=this.learning /> -->
+      <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
       <SkillsElem title="Mehr von mir" :arrLinks=this.socials />
 
-      <!-- <p class="mini pt-5">build: 27.02.2023 12:30</p> -->
+      <p class="mini pt-5">build: 15.07.2023 04:09</p>
     </section>
   </main>
 </template>
@@ -54,23 +55,21 @@ export default {
       randomWord: '',
       wordsList: [
         '- よろしくお願いします(^｡^)',
-        '"Das Leben hat zu viele Variablen."',
         '"Relax, Breath & Move."',
         '"Kunst. Kultur. Schönheit."',
         '<i>Sucht den Cursor seiner Maus...</i>',
         '"Jackpot!!"',
         '<i>Einfach mal alles komplett anders machen.</i>',
-        'Website Crack.',
-        'Heute schon genug Wasser getrunken?'
+        '"Ich hab doch gesagt, dass ich paar Minuten später komm/<br>Wieso klingelt jetzt jede Dekade mein Telefon"',
       ],
       skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
       learning: ["vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-        { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
+      { name: "Github", link: "https://github.com/lilalunex" },
+        { name: "Instagram", link: "https://instagram.com/lilalunex" },
         { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
-        // { name: "instagram", link: "https://instagram.com/lilalunex" },
-        { name: "Github", link: "https://github.com/lilalunex" }
+        { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
       ],
       captionToggled: false,
     }
@@ -129,11 +128,6 @@ export default {
 </script>
 
 <style scoped>
-#portraitHolder {
-  /* position: absolute; */
-  /* transform: translateX(-50%); */
-}
-
 #portraitHolder img {
   max-width: clamp(160px, 30%, 200px);
   transition: .6s ease-in-out;
