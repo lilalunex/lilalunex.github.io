@@ -31,7 +31,7 @@
         <div class="col-12 col-md-6 col-lg-5 col-xl-4 order-2 order-md-1">
           <h2 class="pt-3">Reza Jaxon</h2>
           <p class="px-3 mx-auto">Tänzer. Graffiti-Artist. Designer.</p>
-          <div class="pt-5">
+          <div class="pt-3">
             <a href="https://shibuy.art/" class="px-3 mx-3 button-outline" target="_blank">Website</a>
           </div>
           <div class="pt-5">
