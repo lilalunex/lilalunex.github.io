@@ -13,8 +13,7 @@
             <a href="http://dukkart.de" class="px-3 mx-3 button-outline" target="_blank">Website</a>
           </div>
           <div class="pt-5">
-            <a href="http://dreamstudiobadoeynhausen.de" class="px-3 mx-3 button-outline"
-              target="_blank">Mietstudio</a>
+            <a href="http://dreamstudiobadoeynhausen.de" class="px-3 mx-3 button-outline" target="_blank">Mietstudio</a>
           </div>
           <div class="pt-5">
             <a href="https://www.instagram.com/dukkart/" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
@@ -36,7 +35,7 @@
           </div>
         </div>
         <div class="col-7 col-md-6 col-lg-5 col-xl-4 order-1 order-md-2">
-          <img src="../assets/partner/jaxon6.png" class="w-100 rounded-5">
+          <img src="../assets/partner/jaxon6.png" class="w-100 rounded-5 del1">
         </div>
       </div>
     </section>
@@ -51,6 +50,34 @@ export default {
 
 <style scoped>
 img {
-  max-width: 350px
+  max-width: 350px;
+  transition: .6s ease-in-out;
+  animation: portraitImg 6s infinite;
+}
+
+.del1 {
+  animation-delay: 1s;
+}
+
+@keyframes portraitImg {
+  00% {
+    border: 0px solid var(--teal);
+  }
+
+  85% {
+    border: 0px solid var(--teal);
+  }
+
+  90% {
+    border: 6px solid var(--teal);
+  }
+
+  95% {
+    border-bottom: 9px solid var(--teal);
+  }
+
+  100% {
+    border: 0px solid var(--teal);
+  }
 }
 </style>

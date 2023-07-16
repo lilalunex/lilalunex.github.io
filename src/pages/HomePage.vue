@@ -160,11 +160,11 @@ export default {
   }
 
   90% {
-    border: 3px solid var(--teal);
+    border: 6px solid var(--teal);
   }
 
   95% {
-    border-bottom: 6px solid var(--teal);
+    border-bottom: 9px solid var(--teal);
   }
 
   100% {
