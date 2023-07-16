@@ -138,4 +138,11 @@ p {
   padding: .75rem 2rem;
   
 }
+
+.button-outline:hover,
+.button-outline:active {
+  background-color: var(--teal);
+  /* border-color: var(--teal); */
+  /* color: var(--teal) !important; */
+}
 </style>

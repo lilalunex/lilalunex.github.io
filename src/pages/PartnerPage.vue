@@ -53,10 +53,4 @@ export default {
 img {
   max-width: 350px
 }
-
-a {
-  /* text-decoration: underline !important; */
-  /* text-decoration-color: var(--teal) !important; */
-  color: var(--teal) !important;
-}
 </style>
