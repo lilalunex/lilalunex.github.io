@@ -140,7 +140,7 @@ export default {
 
 <style scoped>
 #portraitHolder img {
-  max-width: clamp(160px, 30%, 200px);
+  max-width: clamp(160px, 30%, 350px);
   transition: .6s ease-in-out;
   animation: portraitImg 6s infinite;
   cursor: pointer;
