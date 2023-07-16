@@ -43,7 +43,7 @@
           target="_blank">Xing</a>
       </div>
 
-      <p class="mini pt-5">build: 16.07.2023 02:28</p>
+      <p class="mini pt-5">build: 16.07.2023 09:52</p>
     </section>
   </main>
 </template>
