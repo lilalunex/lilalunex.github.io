@@ -1,7 +1,7 @@
 <template>
   <section class="animationLeft pb-5">
     <HeaderTwo msg="Partner" />
-    <section class="pt-5">
+    <section class="">
       <div class="text-left row justify-content-center">
         <div class="col-6 col-md-6 col-lg-5 col-xl-4">
           <img src="../assets/partner/dukkart5.png" class="w-100 rounded-5">
