@@ -30,15 +30,26 @@
       <!-- <SkillsElem title="Skilled" :arrImages=this.skills /> -->
       <!-- <SkillsElem title="Currently learning" :arrImages=this.learning /> -->
       <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
-      <SkillsElem title="Mehr von mir" :arrLinks=this.socials />
+      <!-- <SkillsElem title="Mehr von mir" :arrLinks=this.socials /> -->
 
-      <p class="mini pt-5">build: 15.07.2023 04:15</p>
+      <div class="pt-5">
+        <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
+        <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
+      </div>
+      <div class="pt-5">
+        <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
+          target="_blank">LinkedIn</a>
+        <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
+          target="_blank">Xing</a>
+      </div>
+
+      <p class="mini pt-5">build: 16.07.2023 02:17</p>
     </section>
   </main>
 </template>
 
 <script>
-import SkillsElem from '@/components/SkillsElem.vue';
+// import SkillsElem from '@/components/SkillsElem.vue';
 
 export default {
   name: 'HomePage',
@@ -66,7 +77,7 @@ export default {
       learning: ["vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-      { name: "Github", link: "https://github.com/lilalunex" },
+        { name: "Github", link: "https://github.com/lilalunex" },
         { name: "Instagram", link: "https://instagram.com/lilalunex" },
         { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
         { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
@@ -74,9 +85,9 @@ export default {
       captionToggled: false,
     }
   },
-  components: {
-    SkillsElem
-  },
+  // components: {
+  //   SkillsElem
+  // },
   mounted() {
     this.helpCounter = 0;
     this.randomNumber = Math.floor(Math.random() * this.wordsList.length);

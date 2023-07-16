@@ -4,9 +4,10 @@
 		<!-- <p v-for="item in arr" :key="item" alt="">{{ item }}</p> -->
 		<img v-for="item in arrImages" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
 		<div v-if="arrLinks" class="pt-4">
-		<a v-for="item in arrLinks" :key="item" :href="item.link" class="px-3 mx-3 button-outline" target="_blank">{{
-			item.name }}</a>
-			</div>
+			<a v-for="item in arrLinks" :key="item" :href="item.link" class="px-3 mx-3 button-outline pb-ctrl"
+				target="_blank">{{
+					item.name }}</a>
+		</div>
 	</div>
 </template>
 
@@ -40,5 +41,9 @@ export default {
 	padding-right: .25rem;
 	width: 100%;
 	padding-bottom: .5rem;
+}
+
+.pb-ctrl:nth-of-type(2) {
+	margin-bottom: 3rem;
 }
 </style>
