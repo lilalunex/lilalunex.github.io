@@ -4,7 +4,7 @@
     <section class="pt-5">
       <div class="text-left row justify-content-center">
         <div class="col-6 col-md-6 col-lg-5 col-xl-4">
-          <img src="../assets/partner/dukkart3.png" class="w-100 rounded-5">
+          <img src="../assets/partner/dukkart5.png" class="w-100 rounded-5">
         </div>
         <div class="col-12 col-md-6 col-lg-5 col-xl-4">
           <h2 class="pt-3">Sergej Dukkardt</h2>
@@ -39,8 +39,8 @@
               target="_blank">Instagram</a>
           </div>
         </div>
-        <div class="col-6 col-md-6 col-lg-5 col-xl-4 order-1 order-md-2">
-          <img src="../assets/partner/jaxon4.png" class="w-100 rounded-5">
+        <div class="col-6 col-md-6 col-lg-5 col-xl-4 order-1 order-md-2">ƒ
+          <img src="../assets/partner/jaxon5.png" class="w-100 rounded-5">
         </div>
       </div>
     </section>
