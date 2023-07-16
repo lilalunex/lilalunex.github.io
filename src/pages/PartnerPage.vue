@@ -39,7 +39,7 @@
               target="_blank">Instagram</a>
           </div>
         </div>
-        <div class="col-6 col-md-6 col-lg-5 col-xl-4 order-1 order-md-2">ƒ
+        <div class="col-6 col-md-6 col-lg-5 col-xl-4 order-1 order-md-2">
           <img src="../assets/partner/jaxon5.png" class="w-100 rounded-5">
         </div>
       </div>
