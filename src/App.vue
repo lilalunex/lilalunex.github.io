@@ -74,7 +74,7 @@ export default {
 }
 
 html {
-  /* background-color: black; */
+  background-color: black;
 }
 
 #navbarBottomHook,
@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  /* background: rgb(42, 0, 42); */
+  background: black;
   /* background: linear-gradient(180deg,
       rgba(66, 0, 66, 1) 0%,
       rgba(44, 0, 44, 1) 20%,
@@ -102,6 +102,10 @@ h5,
 h6 {
   color: var(--mainColor) !important;
   text-shadow: 2px 2px 0px black;
+}
+
+section {
+  position: relative;
 }
 
 a {
