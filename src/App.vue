@@ -179,29 +179,29 @@ border-color: lighten(#0040C1, 10%);
 }
 
 .cube:nth-child(1) {
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 
 .cube:nth-child(2) {
-  animation-delay: 8s;
+  animation-delay: 4s;
   left: 25vw;
   top: 40vh;
 }
 
 .cube:nth-child(3) {
-  animation-delay: 2s;
+  animation-delay: 1s;
   left: 75vw;
   top: 50vh;
 }
 
 .cube:nth-child(4) {
-  animation-delay: 6s;
+  animation-delay: 3s;
   left: 90vw;
   top: 10vh;
 }
 
 .cube:nth-child(5) {
-  animation-delay: 4s;
+  animation-delay: 2s;
   left: 10vw;
   top: 85vh;
 }
@@ -211,7 +211,7 @@ border-color: lighten(#0040C1, 10%);
   top: 10vh;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .cube:nth-child(1) {
     display: none;
   }
@@ -223,7 +223,7 @@ border-color: lighten(#0040C1, 10%);
   .cube:nth-child(4) {
     display: none;
   }
-}
+} */
 
 @keyframes cube {
   from {
