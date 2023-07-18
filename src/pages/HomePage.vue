@@ -77,7 +77,7 @@ export default {
         '<i>Sucht den Cursor seiner Maus...</i>',
         '"Jackpot!!"',
         '<i>Einfach mal alles komplett anders machen.</i>',
-        '"Ich hab doch gesagt, dass ich paar Minuten später komm/<br>Wieso klingelt jetzt jede Dekade mein Telefon"',
+        // '"Ich hab doch gesagt, dass ich paar Minuten später komm/<br>Wieso klingelt jetzt jede Dekade mein Telefon"',
       ],
       skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
       learning: ["vue"],
