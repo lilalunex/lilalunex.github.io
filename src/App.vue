@@ -178,14 +178,18 @@ p {
 border-color: lighten(#0040C1, 10%);
 }
 
+.cube:nth-child(1) {
+  animation-delay: 10s;
+}
+
 .cube:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 8s;
   left: 25vw;
   top: 40vh;
 }
 
 .cube:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 2s;
   left: 75vw;
   top: 50vh;
 }
@@ -197,13 +201,12 @@ border-color: lighten(#0040C1, 10%);
 }
 
 .cube:nth-child(5) {
-  animation-delay: 8s;
+  animation-delay: 4s;
   left: 10vw;
   top: 85vh;
 }
 
 .cube:nth-child(6) {
-  animation-delay: 10s;
   left: 50vw;
   top: 10vh;
 }
