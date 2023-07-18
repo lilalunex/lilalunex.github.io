@@ -1,5 +1,5 @@
 <template>
-  <main id="homepage" class="page animationLeft container px-0 mx-0">
+  <main id="homepage" class="page animationLeft container px-0 mx-auto">
     <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms" />
     <section id="portraitHolder" class="position-relative">
       <img v-if="randomPortrait === 1" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait1.jpg"

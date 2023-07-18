@@ -1,5 +1,5 @@
 <template>
-  <section class="animationLeft pb-5 container px-0 mx-0">
+  <section class="animationLeft pb-5 container px-0 mx-auto">
     <HeaderTwo msg="Partner" />
     <section class="">
       <div class="text-left row justify-content-center">

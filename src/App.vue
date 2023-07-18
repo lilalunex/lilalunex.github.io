@@ -226,12 +226,22 @@ border-color: lighten(#0040C1, 10%);
 } */
 
 @keyframes cube {
-  from {
+  0% {
     transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  10% {
+    transform: scale(5) rotate(240deg) translate(-50%, -50%);
     opacity: 1;
   }
 
-  to {
+  90% {
+    transform: scale(15) rotate(720deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  100% {
     transform: scale(20) rotate(960deg) translate(-50%, -50%);
     opacity: 0;
   }
