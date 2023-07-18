@@ -74,7 +74,7 @@ export default {
 }
 
 html {
-  background-color: black;
+  /* background-color: black; */
 }
 
 #navbarBottomHook,
@@ -83,7 +83,7 @@ html {
 }
 
 body {
-  background: rgb(42, 0, 42);
+  /* background: rgb(42, 0, 42); */
   /* background: linear-gradient(180deg,
       rgba(66, 0, 66, 1) 0%,
       rgba(44, 0, 44, 1) 20%,
@@ -164,14 +164,14 @@ p {
   left: 45vw;
   width: 10px;
   height: 10px;
-  border: solid 1px #660066;
+  border: solid 1px #420042;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 16s ease-in forwards infinite;
+  animation: cube 12s ease-in forwards infinite;
 }
 
 .cube:nth-child(2n) {
-  border-color: lighten(#0040C1, 10%);
+border-color: lighten(#0040C1, 10%);
 }
 
 .cube:nth-child(2) {
@@ -202,6 +202,20 @@ p {
   animation-delay: 10s;
   left: 50vw;
   top: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .cube:nth-child(1) {
+    display: none;
+  }
+
+  .cube:nth-child(2) {
+    display: none;
+  }
+
+  .cube:nth-child(4) {
+    display: none;
+  }
 }
 
 @keyframes cube {
