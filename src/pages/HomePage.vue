@@ -22,16 +22,20 @@
         <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;"
           class="button">Kontakt</a>
       </div>
+    </section>
+    <section>
       <div id="arrowDown" class="mx-auto">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
+    </section>
 
-      <!-- <SkillsElem title="Skilled" :arrImages=this.skills /> -->
-      <!-- <SkillsElem title="Currently learning" :arrImages=this.learning /> -->
-      <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
-      <!-- <SkillsElem title="Mehr von mir" :arrLinks=this.socials /> -->
+    <!-- <SkillsElem title="Skilled" :arrImages=this.skills /> -->
+    <!-- <SkillsElem title="Currently learning" :arrImages=this.learning /> -->
+    <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
+    <!-- <SkillsElem title="Mehr von mir" :arrLinks=this.socials /> -->
 
+    <section>
       <div class="pt-5">
         <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
         <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
@@ -42,7 +46,9 @@
         <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
           target="_blank">Xing</a>
       </div>
+    </section>
 
+    <section>
       <p class="mini pt-5">build: 16.07.2023 09:52</p>
     </section>
   </main>
@@ -202,6 +208,12 @@ h3 {
   /* left: 50vw; */
   /* transform: translateX(-50%); */
   /* bottom: calc(var(--navbarBottomHeight) + 1.5rem); */
+}
+
+@media only screen and (min-height: 1100px) {
+  #arrowDown {
+    display: none;
+  }
 }
 
 .skipScreen {

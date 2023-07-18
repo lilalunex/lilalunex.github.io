@@ -61,7 +61,10 @@
   animation: slideFromRight .6s;
 }
 
-.animationLeft>section:nth-of-type(3) {
+.animationLeft>section:nth-of-type(3),
+.animationLeft>section:nth-of-type(4),
+.animationLeft>section:nth-of-type(5),
+.animationLeft>section:nth-of-type(6) {
   animation: slideFromLeft .9s;
 }
 
@@ -73,7 +76,10 @@
   animation: slideFromLeft 6s;
 }
 
-.animationRight>section:nth-of-type(3) {
+.animationRight>section:nth-of-type(3),
+.animationRight>section:nth-of-type(4),
+.animationRight>section:nth-of-type(5),
+.animationRight>section:nth-of-type(6) {
   animation: slideFromRight 9s;
 }
 

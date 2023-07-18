@@ -43,7 +43,7 @@ hr {
 
 h2 {
   margin-bottom: 0;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-color: white;
   text-decoration-thickness: 3px;
 }

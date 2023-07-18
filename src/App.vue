@@ -84,11 +84,11 @@ html {
 
 body {
   background: rgb(42, 0, 42);
-  background: linear-gradient(180deg,
+  /* background: linear-gradient(180deg,
       rgba(66, 0, 66, 1) 0%,
       rgba(44, 0, 44, 1) 20%,
       rgba(22, 0, 22, 1) 60%,
-      rgba(0, 0, 0, 1) 100%);
+      rgba(0, 0, 0, 1) 100%); */
   /* background-color: #2a002a !important; */
   display: grid;
   grid-template-rows: clamp(calc(667px - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight)), calc(100vh - var(--navbarBottomHeight))) var(--navbarBottomHeight);
@@ -136,7 +136,7 @@ p {
   border: 2px solid var(--teal);
   transition: .3s;
   padding: .75rem 2rem;
-  
+
 }
 
 .button-outline:hover,
@@ -144,5 +144,75 @@ p {
   background-color: var(--teal);
   /* border-color: var(--teal); */
   /* color: var(--teal) !important; */
+}
+
+.cubeHolder {
+  background: linear-gradient(180deg,
+      rgba(66, 0, 66, 1) 0%,
+      rgba(44, 0, 44, 1) 20%,
+      rgba(22, 0, 22, 1) 60%,
+      rgba(0, 0, 0, 1) 100%);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #660066;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 16s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+  border-color: lighten(#0040C1, 10%);
+}
+
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
 }
 </style>
