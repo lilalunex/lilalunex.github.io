@@ -35,7 +35,7 @@
     <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
     <!-- <SkillsElem title="Mehr von mir" :arrLinks=this.socials /> -->
 
-    <section>
+    <section class="d-md-none">
       <div class="pt-5">
         <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
         <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
@@ -46,6 +46,15 @@
         <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
           target="_blank">Xing</a>
       </div>
+    </section>
+
+    <section class="pt-5 d-none d-md-block">
+      <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
+      <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
+        target="_blank">LinkedIn</a>
+      <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
+        target="_blank">Xing</a>
     </section>
 
     <section>
