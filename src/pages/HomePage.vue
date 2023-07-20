@@ -53,12 +53,18 @@
       <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
       <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
         target="_blank">LinkedIn</a>
-      <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
-        target="_blank">Xing</a>
+      <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline" target="_blank">Xing</a>
     </section>
 
+    <!-- <section class="pt-5 d-none d-md-block">
+      <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a><br />
+      <p class="mini pt-4">
+        Could link more platforms.<br />But there is not much to see.
+      </p>
+    </section> -->
+
     <section>
-      <p class="mini pt-5">build: 16.07.2023 09:52</p>
+      <p class="mini pt-5">build: 20.07.2023 20:14</p>
     </section>
   </main>
 </template>
