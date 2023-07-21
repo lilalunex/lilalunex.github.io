@@ -115,7 +115,7 @@ export default {
     this.randomWord = this.wordsList[this.randomNumber]
     window.setInterval(() => {
       this.picker();
-    }, 6000);
+    }, 4000);
     this.downAnimation = Math.random() < 0.5 ? 1 : 2;
     // this.randomPortrait = Math.random() < 0.5 ? 1 : 2;
     this.randomPortraitTemp = Math.random();
@@ -163,7 +163,7 @@ export default {
 #portraitHolder img {
   max-width: clamp(160px, 30%, 350px);
   transition: .6s ease-in-out;
-  animation: portraitImg 6s infinite;
+  animation: portraitImg 4s infinite;
   cursor: pointer;
 }
 
@@ -176,11 +176,11 @@ export default {
     border: 0px solid var(--teal);
   }
 
-  85% {
+  70% {
     border: 0px solid var(--teal);
   }
 
-  90% {
+  80% {
     border: 6px solid var(--teal);
   }
 
@@ -211,7 +211,7 @@ h3 {
   /* line-height: 2; */
   height: 0;
   overflow: hidden;
-  transition: .6s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 #arrowDown {

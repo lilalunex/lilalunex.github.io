@@ -52,11 +52,11 @@ export default {
 img {
   max-width: 350px;
   transition: .6s ease-in-out;
-  animation: portraitImg 6s infinite;
+  animation: portraitImg 4s infinite;
 }
 
 .del1 {
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes portraitImg {
@@ -64,11 +64,11 @@ img {
     border: 0px solid var(--teal);
   }
 
-  85% {
+  70% {
     border: 0px solid var(--teal);
   }
 
-  90% {
+  80% {
     border: 6px solid var(--teal);
   }
 
