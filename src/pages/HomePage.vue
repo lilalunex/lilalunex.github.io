@@ -24,12 +24,12 @@
       </div>
     </section>
 
-    <section>
+    `<section>
       <div id="arrowDown" class="mx-auto pt-3 mb-3">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
-    </section>
+    </section>`
 
     <section id="intro" class="pt-5 mb-5">
       <HeaderThree msg="Introduction"/>
@@ -41,7 +41,7 @@
       <HeaderThree msg="Next up:" />
       <ul class="text-white px-4 px-md-0">
         <li>🚑 Stop being sick now for over 2 weeks</li>
-        <li>📈 Make spaces between elements the same</li>
+        <li>📈 Make spaces between elements equal</li>
         <li>🦁 Safari browser: Check if nav bar is on the bottom</li>
         <li>💡 Adding portfolio with ideas: One-handed mobile menu</li>
         <li>🛠️ Adding tools page: Coin counter, throw coin with three.js</li>
