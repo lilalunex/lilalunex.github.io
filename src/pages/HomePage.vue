@@ -64,7 +64,7 @@
     </section> -->
 
     <section>
-      <p class="pt-5 mx-auto">Next up:</p>
+<!--      <p class="pt-5 mx-auto">Next up:</p>-->
 <!--      <p class="mini pt-5">Next up</p>-->
     </section>
   </main>
