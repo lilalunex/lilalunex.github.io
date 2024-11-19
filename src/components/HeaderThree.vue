@@ -1,12 +1,12 @@
 <template>
-  <section id="titleOfPage" class="pt-4 pb-1 pb-sm-3 headerTwo">
-    <h2 class="bottom-0 pb-3 position-sticky">{{ msg }}</h2>
+  <section class="pt-4 pb-1 pb-sm-3 headerThree">
+    <h3 class="bottom-0 pb-3 position-sticky">{{ msg }}</h3>
   </section>
 </template>
 
 <script>
 export default {
-  name: "HeaderTwo",
+  name: "HeaderThree",
   data() {
     return {
       currentPath: window.location.hash,
@@ -36,12 +36,10 @@ hr {
   border-top: 3px solid var(--mainColor) !important;
   opacity: 1 !important;
   margin-top: 0;
-  /* border-radius: 10%; */
 }
 
-h2 {
+h3 {
   margin-bottom: 0;
-  /* text-decoration: underline; */
   text-decoration-color: white;
   text-decoration-thickness: 3px;
 }

@@ -12,6 +12,7 @@ import ImprintPage from "@/pages/ImprintPage";
 import PrivacyPage from "@/pages/PrivacyPage";
 import NavbarBottom from "./NavbarBottom.vue";
 import AnimationSlides from "./components/AnimationSlides.vue";
+import SkillsElem from "./components/SkillsElem.vue";
 
 const routes = {
   '/': HomePage,

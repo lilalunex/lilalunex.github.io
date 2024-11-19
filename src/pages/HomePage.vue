@@ -1,13 +1,13 @@
 <template>
-  <main id="homepage" class="page animationLeft container px-0 mx-auto">
-    <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms" />
+  <main id="homepage" class="page animationLeft container px-0 mx-auto mb-5 pb-5">
+    <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms"/>
     <section id="portraitHolder" class="position-relative">
       <img v-if="randomPortrait === 1" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait1.jpg"
-        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <img v-else-if="randomPortrait === 2" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait2.jpg"
-        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <img v-else-if="randomPortrait === 3" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait3.jpg"
-        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <!-- <div class="imgSpacer"></div> -->
       <div id="portraitCaption" class="pt-2">
         <p>📸&nbsp;&nbsp;Sergej Dukkardt</p>
@@ -20,22 +20,41 @@
     <section id="content" class="pt-3">
       <div class="mt-3 mb-4 my-md-5 contact">
         <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;"
-          class="button">Kontakt</a>
+           class="button">Contact</a>
       </div>
     </section>
+
     <section>
-      <div id="arrowDown" class="mx-auto">
+      <div id="arrowDown" class="mx-auto pt-3 mb-3">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
     </section>
 
-    <!-- <SkillsElem title="Skilled" :arrImages=this.skills /> -->
-    <!-- <SkillsElem title="Currently learning" :arrImages=this.learning /> -->
-    <!-- <SkillsElem title="Next up" :arrImages=this.next /> -->
-    <!-- <SkillsElem title="Mehr von mir" :arrLinks=this.socials /> -->
+    <section id="intro" class="pt-5 mb-5">
+      <HeaderThree msg="Introduction"/>
+      <p class="introText mx-auto d-block px-4 px-md-0">
+        As this website becomes more public, I think I should add some text here. I had many ideas for this site (two
+        menu points and other elements are currently hidden). Since I am currently unemployed, I plan to use this site
+        to build a portfolio. - Corrected by ChatGPT
+      </p>s
+      <HeaderThree msg="Next up:" />
+      <ul class="text-white px-4 px-md-0">
+        <li>🚑 Stop being sick now for over 2 weeks</li>
+        <li>📈 Make spaces between elements the same</li>
+        <li>🦁 Safari browser: Check if nav bar is on the bottom</li>
+        <li>💡 Adding portfolio with ideas: One-handed mobile menu</li>
+        <li>🛠️ Adding tools page: Coin counter, throw coin with three.js</li>
+        <li>📈 Improve code</li>
+        <li>🌐 Build this site in Vue, Angular, & React</li>
+      </ul>
+    </section>
+
+    <SkillsElem title="Skilled:" :arrImages=this.skills />
+    <SkillsElem title="Next up:" :arrImages=this.next />
 
     <section class="d-md-none">
+      <h4 class="text-center">Links (nothing special):</h4>
       <div class="pt-5">
         <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
            target="_blank">LinkedIn</a>
@@ -43,12 +62,13 @@
       </div>
       <div class="pt-5">
         <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
-          target="_blank">Xing</a>
+           target="_blank">Xing</a>
         <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
       </div>
     </section>
 
     <section class="pt-5 d-none d-md-block">
+      <h4 class="text-center pb-4">Links (nothing special):</h4>
       <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
          target="_blank">LinkedIn</a>
       <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
@@ -63,18 +83,15 @@
       </p>
     </section> -->
 
-    <section>
-<!--      <p class="pt-5 mx-auto">Next up:</p>-->
-<!--      <p class="mini pt-5">Next up</p>-->
-    </section>
   </main>
 </template>
 
 <script>
-// import SkillsElem from '@/components/SkillsElem.vue';
+import SkillsElem from "@/components/SkillsElem.vue";
 
 export default {
   name: 'HomePage',
+  components: {SkillsElem},
   data() {
     return {
       helpCounter: Number,
@@ -95,14 +112,13 @@ export default {
         '<i>Einfach mal alles komplett anders machen.</i>',
         '"Ich hab doch gesagt, dass ich paar Minuten später komm /<br>wieso klingelt jetzt jede Dekade mein Telefon"',
       ],
-      skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
-      learning: ["vue"],
+      skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo", "vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-        { name: "GitHub", link: "https://github.com/lilalunex" },
-        { name: "Instagram", link: "https://instagram.com/lilalunex" },
-        { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
-        { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
+        {name: "GitHub", link: "https://github.com/lilalunex"},
+        {name: "Instagram", link: "https://instagram.com/lilalunex"},
+        {name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/"},
+        {name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv"},
       ],
       captionToggled: false,
     }
@@ -199,6 +215,16 @@ p.mini {
   color: #aaa !important;
 }
 
+#intro {
+  ul {
+    list-style: none;
+  }
+
+  .introText {
+    max-width: 800px;
+  }
+}
+
 /* .quote.animate {
   animation: quoteAnimation 3s infinite;
 } */
@@ -226,11 +252,11 @@ h3 {
   /* bottom: calc(var(--navbarBottomHeight) + 1.5rem); */
 }
 
-@media only screen and (min-height: 1100px) {
-  #arrowDown {
-    display: none;
-  }
-}
+/* @media only screen and (min-height: 1100px) { */
+/*   #arrowDown { */
+/*     display: none; */
+/*   } */
+/* } */
 
 .skipScreen {
   padding-top: calc(calc(100vh / 2) - calc(1.25 * var(--navbarBottomHeight)));
