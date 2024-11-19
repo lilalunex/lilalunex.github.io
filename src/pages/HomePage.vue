@@ -37,23 +37,23 @@
 
     <section class="d-md-none">
       <div class="pt-5">
-        <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
-        <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
+           target="_blank">LinkedIn</a>
+        <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
       </div>
       <div class="pt-5">
-        <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
-          target="_blank">LinkedIn</a>
         <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
           target="_blank">Xing</a>
+        <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
       </div>
     </section>
 
     <section class="pt-5 d-none d-md-block">
-      <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Github</a>
-      <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
       <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
-        target="_blank">LinkedIn</a>
+         target="_blank">LinkedIn</a>
+      <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
       <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline" target="_blank">Xing</a>
+      <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
     </section>
 
     <!-- <section class="pt-5 d-none d-md-block">
@@ -64,7 +64,8 @@
     </section> -->
 
     <section>
-      <p class="mini pt-5">build: 20.07.2023 20:14</p>
+      <p class="pt-5 mx-auto">Next up:</p>
+<!--      <p class="mini pt-5">Next up</p>-->
     </section>
   </main>
 </template>
@@ -87,18 +88,18 @@ export default {
       randomWord: '',
       wordsList: [
         '- よろしくお願いします(^｡^)',
-        '"Relax, Breath & Move."',
-        '"Kunst. Kultur. Schönheit."',
+        '- Relax, Breath & Move.',
+        'Kunst. Kultur. Schönheit.',
         '<i>Sucht den Cursor seiner Maus...</i>',
-        '"Jackpot!!"',
+        '- Jackpot!!',
         '<i>Einfach mal alles komplett anders machen.</i>',
-        // '"Ich hab doch gesagt, dass ich paar Minuten später komm/<br>Wieso klingelt jetzt jede Dekade mein Telefon"',
+        '"Ich hab doch gesagt, dass ich paar Minuten später komm /<br>wieso klingelt jetzt jede Dekade mein Telefon"',
       ],
       skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo"],
       learning: ["vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-        { name: "Github", link: "https://github.com/lilalunex" },
+        { name: "GitHub", link: "https://github.com/lilalunex" },
         { name: "Instagram", link: "https://instagram.com/lilalunex" },
         { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
         { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
