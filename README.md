@@ -2,7 +2,7 @@
 
 ---
 
-## VueJS
+## VueJS (folder: src)
 
 ## Project setup
 ```
@@ -29,9 +29,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ---
 
-## Remix (React)
+## Remix (folder: remix)
 
-# Welcome to Remix!
+## Welcome to Remix!
 
 - 📖 [Remix docs](https://remix.run/docs)
 
