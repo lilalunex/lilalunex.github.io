@@ -1,11 +1,10 @@
 <template>
   <section class="animationLeft">
-    <HeaderTwo msg="Tools" />
+    <HeaderTwo msg="Tools"/>
     <section>
       <div class="pt-3">
-        <p class="px-3 mx-auto">Hier hatte ich paar Ideen gehabt.<br>
-          Zum Beispiel ein Kleingeldzähler.<br>
-          Aber daraus wird nichts mehr.
+        <p class="px-3 mx-auto">
+          Work in progress ...
         </p>
       </div>
     </section>

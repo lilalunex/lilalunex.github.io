@@ -6,10 +6,10 @@
 import HomePage from "@/pages/HomePage";
 import PartnerPage from "@/pages/PartnerPage";
 import ToolsPage from "@/pages/ToolsPage";
-import ShopPage from "@/pages/ShopPage";
 import NotFoundPage from "@/pages/NotFoundPage";
-import ImprintPage from "@/pages/ImprintPage";
-import PrivacyPage from "@/pages/PrivacyPage";
+import ShopPage from "@/pages/ShopPage";
+// import ImprintPage from "@/pages/ImprintPage";
+// import PrivacyPage from "@/pages/PrivacyPage";
 import NavbarBottom from "./NavbarBottom.vue";
 import AnimationSlides from "./components/AnimationSlides.vue";
 
@@ -19,8 +19,8 @@ const routes = {
   '/partner': PartnerPage,
   '/tools': ToolsPage,
   '/shop': ShopPage,
-  '/imprint': ImprintPage,
-  '/privacy': PrivacyPage,
+  // '/imprint': ImprintPage,
+  // '/privacy': PrivacyPage,
 }
 
 export default {

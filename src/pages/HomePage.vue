@@ -24,29 +24,31 @@
       </div>
     </section>
 
-    `<section>
+    <section>
       <div id="arrowDown" class="mx-auto pt-3 mb-3">
         <img v-if="downAnimation === 1" src="../assets/icons/arrow/arrowDown9.gif" alt="arrowDown" class="w-100">
         <img v-else src="../assets/icons/arrow/scrollDown.gif" alt="arrowDown" class="w-100">
       </div>
-    </section>`
+    </section>
 
     <section id="intro" class="pt-5 mb-5">
       <HeaderThree msg="Introduction"/>
       <p class="introText mx-auto d-block px-4 px-md-0">
-        As this website becomes more public, I think I should add some text here. I had many ideas for this site (two
-        menu points and other elements are currently hidden). Since I am currently unemployed, I plan to use this site
-        to build a portfolio. - Corrected by ChatGPT
-      </p>s
-      <HeaderThree msg="Next up:" />
+        As this website becomes more public, I should add some text here. I had many ideas for this site back then.
+        Since I am currently unemployed, I am starting to build a portfolio here.
+      </p>
+      <HeaderThree msg="Next up:"/>
       <ul class="text-white px-4 px-md-0">
-        <li>🚑 Stop being sick now for over 2 weeks</li>
-        <li>📈 Make spaces between elements equal</li>
-        <li>🦁 Safari browser: Check if nav bar is on the bottom</li>
-        <li>💡 Adding portfolio with ideas: One-handed mobile menu</li>
-        <li>🛠️ Adding tools page: Coin counter, throw coin with three.js</li>
-        <li>📈 Improve code</li>
-        <li>🌐 Build this site in Vue, Angular, & React</li>
+        <li>🏥 Stop being sick now for over 2 weeks</li>
+<!--        <li>🔨 Why are there sections in sections...</li>-->
+<!--        <li>🔧 Repair slide animations from each side</li>-->
+<!--        <li>📊 Make spaces between elements equal</li>-->
+        <li>🌍 Add Languages: EN, DE, RU, JP</li>
+        <li>🦓 Safari browser: Check if nav bar is on the bottom</li>
+        <li>🧠 Adding portfolio with ideas: One-handed mobile menu</li>
+        <li>🛠️ Adding tools page: Coin counter, throw coin with three.js, TODO list</li>
+        <li>💻 Improve code</li>
+        <li>🌍 Build this site in Vue, Angular, & React</li>
       </ul>
     </section>
 
@@ -72,7 +74,8 @@
       <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
          target="_blank">LinkedIn</a>
       <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
-      <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline" target="_blank">Xing</a>
+      <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
+         target="_blank">Xing</a>
       <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
     </section>
 

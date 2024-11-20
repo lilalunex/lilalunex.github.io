@@ -1,7 +1,7 @@
 <template>
   <section id="navbarBottom" class="position-sticky bottom-0 w-100 mx-auto d-block px-1 px-sm-0" v-bind:class="[animationClass]">
     <div class="row mx-auto g-0 justify-content-center">
-      <div v-for="(item) in items" :key="item" class="col-4 text-center">
+      <div v-for="(item) in items" :key="item" class="col-3 text-center">
         <a :href="'#/'+item.link" class="ctrl">
           <img :src="getImgUrl(item.link)" :alt="item.link">
         </a>
@@ -35,8 +35,8 @@ export default {
       items: [
         {link: 'home'},
         {link: 'partner'},
-        // {link: 'tools'},
-        // {link: 'shop'},
+        {link: 'tools'},
+        {link: 'shop'}
       ]
     }
   },
