@@ -33,7 +33,7 @@
 
     <section id="intro" class="pt-5 mb-5">
       <HeaderThree msg="Introduction"/>
-      <p class="mx-auto d-block">
+      <p class="introText mx-auto d-block">
         As this website becomes more public, I should add some text here. I had many ideas for this site back then.
         Since I am currently unemployed, I am starting to build a portfolio here.
       </p>
@@ -215,7 +215,7 @@ export default {
 p.mini {
   font-size: .75rem;
   color: #aaa !important;
-}
+}ad
 
 .container {
   max-width: 1200px;
@@ -224,6 +224,10 @@ p.mini {
 #intro {
   ul {
     list-style: none;
+  }
+
+  .introText {
+    max-width: 640px;
   }
 }
 
