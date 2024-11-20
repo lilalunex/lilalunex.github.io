@@ -1,5 +1,5 @@
 <template>
-  <section id="navbarBottom" class="position-sticky bottom-0 w-100 mx-auto d-block px-1 px-sm-0" v-bind:class="[animationClass]">
+  <section id="navbarBottom" class="container position-sticky bottom-0 w-100 mx-auto d-block px-1 px-sm-0" v-bind:class="[animationClass]">
     <div class="row mx-auto g-0 justify-content-center">
       <div v-for="(item) in items" :key="item" class="col-3 text-center">
         <a :href="'#/'+item.link" class="ctrl">
@@ -18,6 +18,10 @@
           </a>
         </div>
       </div> -->
+    </div>
+    <div class="text-center text-white">
+      <p class="pt-3">Current: VueJS 3.2.13</p>
+      <a href="/remix">Remix</a>
     </div>
   </section>
 </template>
