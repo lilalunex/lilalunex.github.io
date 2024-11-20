@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4 skills position-relative">
+  <section class="py-4 skills position-relative">
     <h4 class="text-center pb-3">{{ title }}</h4>
     <!--		 <p v-for="item in arr" :key="item" alt="">{{ item }}</p>-->
     <img v-for="item in arrImages" :key="item" :src="getImgSkills(item)" alt="{{ item }}">
@@ -9,7 +9,7 @@
           item.name
         }}</a>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

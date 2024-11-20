@@ -1,5 +1,5 @@
 <template>
-  <main id="homepage" class="page animationLeft container px-0 mx-auto mb-5 pb-5">
+  <main id="homepage" class="page animationLeft container mx-auto mb-5 pb-5">
     <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms"/>
     <section id="portraitHolder" class="position-relative">
       <img v-if="randomPortrait === 1" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait1.jpg"
@@ -14,7 +14,7 @@
       </div>
       <div class="quote pt-3">
         <!-- <div class=""> -->
-        <p class="px-3 mx-auto" v-html="randomWord"></p>
+        <p class="mx-auto" v-html="randomWord"></p>
       </div>
     </section>
     <section id="content" class="pt-3">
@@ -33,17 +33,16 @@
 
     <section id="intro" class="pt-5 mb-5">
       <HeaderThree msg="Introduction"/>
-      <p class="introText mx-auto d-block px-4 px-md-0">
+      <p class="mx-auto d-block">
         As this website becomes more public, I should add some text here. I had many ideas for this site back then.
         Since I am currently unemployed, I am starting to build a portfolio here.
       </p>
       <HeaderThree msg="Next up:"/>
-      <ul class="text-white px-4 px-md-0">
-        <li>🏥 Stop being sick now for over 2 weeks</li>
+      <ul class="text-white">
 <!--        <li>🔨 Why are there sections in sections...</li>-->
 <!--        <li>🔧 Repair slide animations from each side</li>-->
 <!--        <li>📊 Make spaces between elements equal</li>-->
-        <li>🌍 Add Languages: EN, DE, RU, JP</li>
+        <li>🌍 Add Languages...</li>
         <li>🦓 Safari browser: Check if nav bar is on the bottom</li>
         <li>🧠 Adding portfolio with ideas: One-handed mobile menu</li>
         <li>🛠️ Adding tools page: Coin counter, throw coin with three.js, TODO list</li>
@@ -218,13 +217,13 @@ p.mini {
   color: #aaa !important;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 #intro {
   ul {
     list-style: none;
-  }
-
-  .introText {
-    max-width: 800px;
   }
 }
 
