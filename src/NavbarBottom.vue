@@ -19,10 +19,6 @@
         </div>
       </div> -->
     </div>
-    <div class="text-center text-white">
-      <p class="pt-3">Current: VueJS 3.2.13</p>
-      <a href="/remix">Remix</a>
-    </div>
   </section>
 </template>
 
