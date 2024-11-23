@@ -1,13 +1,13 @@
 <template>
   <main id="homepage" class="page animationLeft container mx-auto mb-5 pb-5">
-    <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms"/>
+    <HeaderTwo msg="Yet another web developer" class="slideFromTop3ms" />
     <section id="portraitHolder" class="position-relative">
       <img v-if="randomPortrait === 1" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait1.jpg"
-           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <img v-else-if="randomPortrait === 2" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait2.jpg"
-           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <img v-else-if="randomPortrait === 3" @click="toggleCaption" id="portrait" src="../assets/portraits/portrait3.jpg"
-           alt="Lunex" class="w-100 rounded-5 pb-sm-2">
+        alt="Lunex" class="w-100 rounded-5 pb-sm-2">
       <!-- <div class="imgSpacer"></div> -->
       <div id="portraitCaption" class="pt-2">
         <p>📸&nbsp;&nbsp;Sergej Dukkardt</p>
@@ -20,7 +20,7 @@
     <section id="content" class="pt-3">
       <div class="mt-3 mb-4 my-md-5 contact">
         <a href="mailto:&#x61;&#x6c;&#x65;&#x78;&#x61;&#x6e;&#x64;&#x65;&#x72;&#x73;&#x63;&#x68;&#x61;&#x72;&#x6f;&#x77;&#x40;&#x69;&#x63;&#x6c;&#x6f;&#x75;&#x64;&#x2e;&#x63;&#x6f;&#x6d;"
-           class="button">Contact</a>
+          class="button">Contact</a>
       </div>
     </section>
 
@@ -32,38 +32,26 @@
     </section>
 
     <section id="intro" class="pt-5 mb-5">
-      <HeaderThree msg="Introduction"/>
+      <HeaderThree msg="Introduction" />
       <p class="introText mx-auto d-block">
-        As this website becomes more public, I should add some text here. I had many ideas for this site back then.
-        Since I am currently unemployed, I am starting to build a portfolio here.
+        Starting doing this Website in 01/23. To learn Vue.JS. Icons dont with Procreate. I like the personal touch from
+        me it has. But it sure is playful. I have some ideas. Let's see how many of them will come to live.
       </p>
-      <HeaderThree msg="Next up:"/>
-      <ul class="text-white">
-<!--        <li>🔨 Why are there sections in sections...</li>-->
-<!--        <li>🔧 Repair slide animations from each side</li>-->
-<!--        <li>📊 Make spaces between elements equal</li>-->
-        <li>🌍 Add Languages...</li>
-        <li>🦓 Safari browser: Check if nav bar is on the bottom</li>
-        <li>🧠 Adding portfolio with ideas: One-handed mobile menu</li>
-        <li>🛠️ Adding tools page: Coin counter, throw coin with three.js, TODO list</li>
-        <li>💻 Improve code</li>
-        <li>🌍 Build this site in Vue, Angular, & React</li>
-      </ul>
     </section>
 
     <SkillsElem title="Skilled:" :arrImages=this.skills />
-    <SkillsElem title="Next up:" :arrImages=this.next />
+    <SkillsElem title="Next up (Not up to date):" :arrImages=this.next />
 
     <section class="d-md-none">
       <h4 class="text-center">Links (nothing special):</h4>
       <div class="pt-5">
         <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
-           target="_blank">LinkedIn</a>
+          target="_blank">LinkedIn</a>
         <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
       </div>
       <div class="pt-5">
         <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
-           target="_blank">Xing</a>
+          target="_blank">Xing</a>
         <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
       </div>
     </section>
@@ -71,10 +59,10 @@
     <section class="pt-5 d-none d-md-block">
       <h4 class="text-center pb-4">Links (nothing special):</h4>
       <a href="https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" class="px-3 mx-3 button-outline"
-         target="_blank">LinkedIn</a>
+        target="_blank">LinkedIn</a>
       <a href="https://github.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">GitHub</a>
       <a href="https://www.xing.com/profile/AlexanderLunex_Scharow/cv" class="px-3 mx-3 button-outline"
-         target="_blank">Xing</a>
+        target="_blank">Xing</a>
       <a href="https://instagram.com/lilalunex" class="px-3 mx-3 button-outline" target="_blank">Instagram</a>
     </section>
 
@@ -93,7 +81,7 @@ import SkillsElem from "@/components/SkillsElem.vue";
 
 export default {
   name: 'HomePage',
-  components: {SkillsElem},
+  components: { SkillsElem },
   data() {
     return {
       helpCounter: Number,
@@ -117,10 +105,10 @@ export default {
       skills: ["html5", "css3", "js", "bs", "tw", "sass", "wp", "mysql", "woo", "vue"],
       next: ["react", "nuxt", "next", "lottiefiles"],
       socials: [
-        {name: "GitHub", link: "https://github.com/lilalunex"},
-        {name: "Instagram", link: "https://instagram.com/lilalunex"},
-        {name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/"},
-        {name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv"},
+        { name: "GitHub", link: "https://github.com/lilalunex" },
+        { name: "Instagram", link: "https://instagram.com/lilalunex" },
+        { name: "LinkedIn", link: "https://www.linkedin.com/in/alexander-lunex-scharow-675903265/" },
+        { name: "Xing", link: "https://www.xing.com/profile/AlexanderLunex_Scharow/cv" },
       ],
       captionToggled: false,
     }
@@ -215,9 +203,9 @@ export default {
 p.mini {
   font-size: .75rem;
   color: #aaa !important;
-}ad
+}
 
-.container {
+ad .container {
   max-width: 1200px;
 }
 

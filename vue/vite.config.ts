@@ -18,4 +18,11 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  pages: {
+    index: {
+      entry: 'src/main.ts', // The main TypeScript entry file
+      template: 'public/index.html', // The HTML template
+      filename: 'index.html', // The output file
+    },
+  }
 })
