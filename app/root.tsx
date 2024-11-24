@@ -1,6 +1,5 @@
-import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link, useLoaderData } from "@remix-run/react";
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, Link } from "@remix-run/react";
 import type { LinksFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
 
 import "./css/base.css";
 import "./css/dev.css";
@@ -18,19 +17,11 @@ export const links: LinksFunction = () => [
   },
 ];
 
-export const loader = async () => {
-  return json({
-    baseUrl: process.env.BASE_URL || "/",
-  });
-};
-
 export function Layout({ children }: { children: React.ReactNode }) {
-  const { baseUrl } = useLoaderData<typeof loader>();
 
   return (
     <html lang="en">
       <head>
-        <base href="/build/client/" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
