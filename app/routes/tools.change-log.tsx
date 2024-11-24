@@ -1,5 +1,4 @@
 export default function ChangeLog() {
-  // Group entries by date
   const changeLogEntries = [
     {
       date: "20.10.24",
