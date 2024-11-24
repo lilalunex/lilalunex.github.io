@@ -19,7 +19,7 @@
 
 html,
 body {
-min-height: 100vh;
+    min-height: 100vh;
 
     @media (prefers-color-scheme: dark) {
         color-scheme: dark;
@@ -60,4 +60,10 @@ main {
 .link-holder {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+.loading {
+    opacity: 0.25;
+    transition: opacity 200ms;
+    transition-delay: 200ms;
 }

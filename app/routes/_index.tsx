@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function Index() {
-  // List of image filenames
   const images = [
     "/dev/dev1.jpg",
     "/dev/dev2.jpg",
@@ -27,9 +26,8 @@ export default function Index() {
           </p>
         </div>
       </div>
-      
-      {/* Adjusted parent container width */}
-      <div className="mx-auto w-[75%] pb-12">
+
+      <div className="mx-auto w-full pb-12">
         <div className="flex justify-between">
           <div className="w-2/3 text-center">
             <h2>Yet another web developer</h2>
@@ -59,8 +57,6 @@ export default function Index() {
               </div>
             </div>
           </div>
-          
-          {/* Image container with flex and items-center for vertical centering */}
           <div className="w-1/3 flex items-center">
             <figure>
               {randomImage && (
