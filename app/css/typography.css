@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Lunex";
+    src: url("../fonts/Lunex-Regular.otf") format("opentype"),
+        url("../fonts/Lunex-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+}

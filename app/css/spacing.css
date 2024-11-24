@@ -1,0 +1,28 @@
+nav,
+h2 {
+    padding-bottom: 1.5rem;
+}
+
+.page,
+.sub-navi,
+.idea,
+.partner,
+.peace,
+.dev > div {
+    padding-top: 3rem;
+}
+
+main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.idea,
+.page {
+    padding-left: 3rem;
+}
+
+.partner,
+.peace {
+    padding-bottom: 3rem;
+}

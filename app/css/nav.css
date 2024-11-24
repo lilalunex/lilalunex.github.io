@@ -1,0 +1,14 @@
+nav.main-navi {
+    border-bottom: 3px solid var(--color-purple-5);
+
+    img {
+        height: 120px;
+    }
+}
+
+.sub-navi {
+    min-width: 300px;
+    min-height: 900px;
+    transition: .3s;
+    border-right: 3px solid var(--color-purple-5);
+}

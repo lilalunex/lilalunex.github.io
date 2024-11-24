@@ -1,0 +1,20 @@
+.idea.mobile-wheel-menu {
+    img {
+        width: 200px;
+        height: auto;
+        margin: 1rem;
+        border: 2px solid white;
+        border-radius: 12px;
+    }
+}
+
+.idea.first-vue-website {
+    iframe {
+        height: 60vh;
+        border-radius: 12px;
+    }
+}
+
+.idea {
+    padding-bottom: 3rem;
+}

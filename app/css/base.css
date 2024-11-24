@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Prelude */
+    --color-purple-1: #d8bfe8;
+    /* Wild Strawberry */
+    --color-purple-3: #ff3d94;
+    /* Studio */
+    --color-purple-5: #8d43ad;
+
+    /* Cerulean */
+    --color-teal-1: #009dd1;
+
+    /* Gossamer */
+    --color-teal-1-hover: #0d9c78;
+}
+
+html,
+body {
+min-height: 100vh;
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+body {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(21, 0, 21, 1) 100%);
+    /* background: linear-gradient(135deg, rgba(21, 0, 21, 1) 0%, rgba(8, 0, 8, 1) 100%); */
+    color: var(--color-purple-1);
+}
+
+.border-color-purple-5 {
+    border-color: var(--color-purple-5);
+}
+
+a {
+    color: var(--color-teal-1);
+    transition: .3s;
+}
+
+a:hover {
+    color: var(--color-teal-1-hover);
+}
+
+.btn {
+    border-color: var(--color-teal-1);
+}
+
+.btn:hover {
+    border-color: var(--color-teal-1-hover1);
+}
+
+main {
+    border-bottom: 3px solid var(--color-purple-5);
+}
+
+.link-holder {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
