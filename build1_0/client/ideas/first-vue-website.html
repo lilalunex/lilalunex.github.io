@@ -220,9 +220,11 @@
                 else if (element.tagName === 'A' && element.hasAttribute('href')) {
                     relativePath = element.getAttribute('href');
                     if (relativePath.startsWith('/') && !relativePath.startsWith(basePath)) {
-                        // Append '.html' for non-root paths
+                        // Append '.html' only if it doesn't already have it
                         if (!relativePath.endsWith('/')) {
-                            relativePath += '.html';
+                            if (!relativePath.endsWith('.html')) {
+                                relativePath += '.html';
+                            }
                         }
                         element.setAttribute('href', basePath + relativePath.slice(1));
                     }
