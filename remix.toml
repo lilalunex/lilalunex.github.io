@@ -1,0 +1,4 @@
+# remix.toml
+
+[deployment]
+  publicPath = "/"

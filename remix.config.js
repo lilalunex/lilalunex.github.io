@@ -1,7 +1,6 @@
 module.exports = {
-    deployment: {
-      target: 'static',
-      publicPath: '/'
-    },
-  };
-  
+  deployment: {
+    target: 'static',
+    publicPath: '/'
+  },
+};
