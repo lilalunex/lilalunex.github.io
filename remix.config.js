@@ -1,5 +1,6 @@
 module.exports = {
-  deploy: {
-    adapter: "@remix-run/netlify",
+  deployment: {
+    target: 'static',
+    publicPath: '/'
   },
 };
